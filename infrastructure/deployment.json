@@ -391,10 +391,10 @@
           "name": "[parameters('WebsiteName')]",
           "location": "[parameters('Location')]",
     "dependsOn": [
-        "[resourceId('Microsoft.Insights/components', parameters('ApplicationInsightsName'))]",
-              "[resourceId('Microsoft.Web/serverfarms', parameters('HostingPlanName'))]",
-              "[resourceId('Microsoft.Storage/storageAccounts', parameters('StorageAccountName'))]"
-          ],
+            "[resourceId('Microsoft.Insights/components', parameters('ApplicationInsightsName'))]",
+            "[resourceId('Microsoft.Web/serverfarms', parameters('HostingPlanName'))]",
+            "[resourceId('Microsoft.Storage/storageAccounts', parameters('StorageAccountName'))]"
+                ],
           "properties": {
               "serverFarmId": "[parameters('HostingPlanName')]",
               "siteConfig": {
